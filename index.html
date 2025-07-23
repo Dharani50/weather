@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1 id="heading">Weather Manager</h1>
+      <input type="text" placeholder="Enter city-name" id="city-input">
+      <br>
+      <input type="button" value="Search" onclick="getWeather()">
+    </div>
+
+    <div class="result">
+      <h2 id="city-name">------</h2>
+      <div>
+        <h1 id="weather-type">-------</h1>
+        <div>
+          <h3>Temp: <span id="temp"></span> °C</h3>
+          <h3>Min Temp: <span id="min-temp"></span> °C</h3>
+          <h3>Max Temp: <span id="max-temp"></span> °C</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
